@@ -1,0 +1,19 @@
+.carousel{
+    margin-bottom: 30px;
+}
+.carousel-item .carousel-caption h5{
+    color: red;
+}
+.carousel-item .carousel-caption p{
+    color: red;
+}
+#badge{
+    border-radius: 100%;
+    font-size: 12px;
+    margin-left: -16px;
+    position: relative;
+    top: -15px;
+}
+.c{
+    margin: 0 20px;
+}

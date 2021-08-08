@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Nike</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <center> 
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="cover 4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>SALE</h5>
+              <p>The world most popular nike shoes!!</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="cover 5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>NEW ARRIBAL</h5>
+              <p>Corona sale 50% off</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="cover 6.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Black Friday</h5>
+              <p>80% OFF SALE</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </center>
+<div class="container">
+    <div class="row">
+        <div class="col-md" >
+            <div class="card">
+                <img src="a.jpg" class="card-img-top" alt="..." width="300" height="250">
+                <div class="card-body">
+                  <h5 class="card-title">Nike pegasus 1.2</h5>
+                  <p>$199</p>
+                  <p class="card-text">Men's road shoe</p>
+                  <a  class="btn btn-primary"onclick="add_to_cart(0)">add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card">
+                <img src="b.jpg" class="card-img-top" alt="..." width="300" height="250">
+                <div class="card-body">
+                  <h5 class="card-title">Nike zoom XV</h5>
+                  <p>$365</p>
+                  <p class="card-text">Men's sport shoe</p>
+                  <a class="btn btn-primary"onclick="add_to_cart(1)">add to cart</a>
+                </div>
+            </div>
+         </div>
+        <div class="col-md">
+            <div class="card">
+                <img src="c.jpg" class="card-img-top" alt="..." width="300" height="250">
+                <div class="card-body">
+                  <h5 class="card-title">Nike running shoes 3.5</h5>
+                  <p>$245</p>
+                  <p class="card-text">Men's running shoe</p>
+                  <a  class="btn btn-primary"onclick="add_to_cart(2)">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container  mt-4">
+  <div class="row">
+      <div class="col-md">
+          <div class="card">
+              <img src="sgirt 2.jpg" class="card-img-top" alt="..." width="300" height="500">
+              <div class="card-body">
+                <h5 class="card-title">Nike jacket for men</h5>
+                <p>$349</p>
+                <p class="card-text">Sport jacket</p>
+                <a  class="btn btn-primary"onclick="add_to_cart(3)">add to cart</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md">
+          <div class="card">
+              <img src="shirt 1.jpg" class="card-img-top" alt="..." width="300" height="500">
+              <div class="card-body">
+                <h5 class="card-title">Jacket in black</h5>
+                <p>$350</p>
+                <p class="card-text">Men's jacket</p>
+                <a class="btn btn-primary"onclick="add_to_cart(4)">add to cart</a>
+              </div>
+          </div>
+       </div>
+      <div class="col-md">
+          <div class="card">
+              <img src="shirt 3.jpg" class="card-img-top" alt="..." width="300" height="500">
+              <div class="card-body">
+                <h5 class="card-title">Tshirt in dark black</h5>
+                <p>$99</p>
+                <p class="card-text">Black shirt</p>
+                <a  class="btn btn-primary"onclick="add_to_cart(5)">add to cart</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+    <br><br>
+    <div class="c">
+    <h3>My cart <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+      <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+    </svg> <span id="badge" class="badge bg-danger">0</span></h3>
+    <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product name</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+        </tbody>
+      </table>
+      <div class="tp">
+          <h3>Total Price: <span id="totalprice"> </span></h3>
+      </div>
+
+      <form class="row g-3">
+        <div class="col-auto">
+          <label for="staticEmail2" class="visually-hidden">Email</label>
+          <input type="number" class="form-control" id="money" placeholder="your money">
+        </div>
+        <br>
+        <div class="col-auto">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input type="text" class="form-control" id="change" placeholder="your change">
+          <br>
+        </div>
+      </form>
+      <div class="col-auto">
+        <button onclick="paid()" class="btn btn-primary mb-3">payment</button>
+      </div>
+    </div>
+   <script src="java.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
